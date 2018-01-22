@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h3>Random Word (attempt #{{ request.session.tries }})</h3>
+        <h1>{{ request.session.word }}</h1>
+        <a href="/random_word/generate"><button>Generate</button></a>
+        <a href="/random_word/reset"><button>Reset</button></a>
+    </body>
+</html>
